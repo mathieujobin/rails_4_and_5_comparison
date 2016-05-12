@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  bird: 
+  color: MyString
+  length: 1
+
+two:
+  bird: 
+  color: MyString
+  length: 1
