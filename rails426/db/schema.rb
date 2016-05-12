@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160510224600) do
+ActiveRecord::Schema.define(version: 20160511122503) do
 
   create_table "birds", force: :cascade do |t|
     t.integer  "tree_id"
@@ -22,6 +22,16 @@ ActiveRecord::Schema.define(version: 20160510224600) do
 
   add_index "birds", ["name"], name: "index_birds_on_name", unique: true
   add_index "birds", ["tree_id"], name: "index_birds_on_tree_id"
+
+  create_table "feathers", force: :cascade do |t|
+    t.integer  "bird_id"
+    t.string   "color"
+    t.integer  "length"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "feathers", ["bird_id"], name: "index_feathers_on_bird_id"
 
   create_table "trees", force: :cascade do |t|
     t.string   "name"

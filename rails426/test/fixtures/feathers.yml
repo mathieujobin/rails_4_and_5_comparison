@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  bird_id: 
-  color: MyString
-  length: 1
+  bird_id: 1
+  color: brown
+  length: 8
 
 two:
-  bird_id: 
-  color: MyString
-  length: 1
+  bird_id: 1
+  color: red
+  length: 6
